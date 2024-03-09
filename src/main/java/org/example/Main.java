@@ -26,7 +26,7 @@ public class Main {
 		System.out.print("\n-------------------RECORD------------------------ ");
 		TiempoRecord tiempoRecord = new TiempoRecord(LocalDate.now(), LocalTime.now());
 		FormatoFecha formatoFecha = new FormatoFecha(tiempoRecord.fecha());
-		System.out.print("\nLa fecha de hoy en formato corto: " + tiempoRecord.fecha());
+		System.out.print("\nLa fecha de hoy en formato corto: " + formatoFecha.obtenerFormatoCorto());
 		System.out.print("\nLa fecha de hoy en formato largo: " + formatoFecha.obtenerFormatoLargo());
 	}
 }
