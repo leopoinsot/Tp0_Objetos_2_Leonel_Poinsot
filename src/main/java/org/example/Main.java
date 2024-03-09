@@ -15,11 +15,12 @@ public class Main {
 		System.out.print("\nLa fecha de hoy en formato corto: " + tiempo.obtenerFechaFormatoCorto());
 		System.out.print("\nLa fecha de hoy en formato largo: " + tiempo.obtenerFechaFormatoLargo());
 
-        /*
+     	   /*
 		//ANEMICO --------------------- Delega la logica al modelo de dominio y no al objeto (No encapsulamiento)
 		TiempoAnemico = new TiempoAnemico(LocalDate.now(), LocalTime.now());
-		System.out.print("\nLa fecha de hoy en formato corto: " + tiempoAnemico.getFecha());
-		System.out.print("\nLa fecha de hoy en formato largo: " + obtenerFechaFormatoLargo(tiempoAnemico.getFecha()));
+  		FormatoFecha formatoFecha = new FormatoFecha(tiempoAnemico.getFecha());
+		System.out.print("\nLa fecha de hoy en formato corto: " +  formatoFecha.obtenerFormatoCorto());
+		System.out.print("\nLa fecha de hoy en formato largo: " + formatoFecha.obtenerFormatoLargo());
 	    */
 
 		//RECORD -----------------------------------------------------------------------------------------------
